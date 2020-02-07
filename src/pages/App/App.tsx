@@ -1,13 +1,15 @@
 import React from 'react';
 
 import { Container, Navbar, Content } from './styles';
+import { Chat, SideMenu } from './components';
 
 const App = () => {
   return (
     <Container>
       <Navbar />
       <Content>
-        <h1>OLá mundo</h1>
+        <SideMenu />
+        <Chat />
       </Content>
     </Container>
   );
