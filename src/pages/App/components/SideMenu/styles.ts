@@ -19,6 +19,19 @@ const Header = styled.div`
   padding: 0 10px;
 `;
 
+const HeaderActions = styled.div`
+  display: flex;
+  & > * {
+    cursor: pointer;
+    &:hover {
+      fill: ${colors.green};
+    }
+  }
+  & > :not(:last-child) {
+    margin: 0 10px;
+  }
+`;
+
 const Avatar = styled.img`
   width: 40px;
   height: 40px;
@@ -26,4 +39,22 @@ const Avatar = styled.img`
   background-color: white;
 `;
 
-export { Container, Header, Avatar };
+const Search = styled.div`
+  height: 50px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  input {
+    flex: 1;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+`;
+
+export { Container, Header, Avatar, Search, HeaderActions };
