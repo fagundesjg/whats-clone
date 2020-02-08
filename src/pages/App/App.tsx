@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container, Navbar, Content } from './styles';
-import { Chat, SideMenu } from './components';
+import { SideMenu, Welcome } from './components';
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <Navbar />
       <Content>
         <SideMenu />
-        <Chat />
+        <Welcome />
       </Content>
     </Container>
   );

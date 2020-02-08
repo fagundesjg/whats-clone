@@ -5,7 +5,7 @@ import { sizes, colors } from '../../../../styles';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 4;
   border-right: 1px solid #ccc;
   background-color: ${colors.white};
 `;
